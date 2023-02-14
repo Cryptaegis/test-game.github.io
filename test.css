@@ -1,0 +1,9 @@
+
+.player--active{
+    color: yellow; 
+    background-color:crimson;
+    font-family: 'Comic Sans MS'; 
+    text-decoration: line-through;
+  };
+
+  
