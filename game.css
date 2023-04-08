@@ -1,0 +1,76 @@
+
+body{
+  background-color:pink;
+
+}
+
+.player--active
+{
+
+background-color:grey;  
+}
+
+.player-1:after{
+  
+ border-radius: 70%;
+ background:hsl(0, 100%, 50%);
+}
+
+section{
+ display: inline-block;
+text-align: center;
+height: 10em;
+margin-left:8em;
+padding: 5px;
+font-size: 1.2em;  
+}
+
+
+.box-container{
+display:block;
+background-color:	#FFFFFF;
+box-shadow: 10px 5px 5px red;
+margin:1em 8em 3em 8em;
+padding: .5em;
+ width: 80%;
+height: 35em;
+
+}
+.button-container{
+position:absolute; 
+text-align: center;
+margin: -10em 23.4em ; 
+width:6em;
+font-size:20px;
+
+}
+
+.new-title{
+position:absolute; 
+width:5em; 
+margin:0em 10em 0em 19.3em;
+font-size:25px;
+}
+.score--label{
+margin-top:1.5em;
+margin-bottom:3em;
+font-size:3em; 
+}
+.current-label, .current-score{
+background:red;
+}
+.current-label{
+margin:5em 0em 0em 0em;
+height: 1.5em; 
+}
+
+.current-score{
+margin-top:0em;
+font-size:1.3em;  
+}
+
+.panel-1, .panel-2{
+display:inline-block;
+height:35em; 
+width:49.7%;
+}
