@@ -1,19 +1,18 @@
 
 body{
-  background-color:pink;
+  background-color:#741B47;
 
 }
 
 .player--active
 {
 
-background-color:grey;  
+background-color:#BCBCBC;  
 }
 
 .player-1:after{
-  
  border-radius: 70%;
- background:hsl(0, 100%, 50%);
+ background:hsl(0, 11%, 2%);
 }
 
 section{
@@ -29,35 +28,51 @@ font-size: 1.2em;
 .box-container{
 display:block;
 background-color:	#FFFFFF;
-box-shadow: 10px 5px 5px red;
+box-shadow: 10px 5px 5px #FF0000;
 margin:1em 8em 3em 8em;
 padding: .5em;
  width: 80%;
 height: 35em;
 
 }
+
+
 .button-container{
 position:absolute; 
 text-align: center;
-margin: -10em 23.4em ; 
+margin: -7em 23em ; 
 width:6em;
 font-size:20px;
 
 }
 
-.new-title{
+.bi-plus-circle{
 position:absolute; 
-width:5em; 
-margin:0em 10em 0em 19.3em;
+width:10em; 
+margin:2em 25em;
 font-size:25px;
 }
+
+.bi-arrow-repeat, .bi-save-fill{
+  position:absolute;
+  color:#FF0000;
+}
+.bi-arrow-repeat {
+  margin: 1em -3em;
+}
+.bi-save-fill{
+  margin: 0em -3em;
+
+}
+
+
 .score--label{
 margin-top:1.5em;
 margin-bottom:3em;
 font-size:3em; 
 }
 .current-label, .current-score{
-background:red;
+background:#FF0000;
 }
 .current-label{
 margin:5em 0em 0em 0em;
@@ -95,9 +110,8 @@ width:49.7%;
 }
 /*smartphone portrait */
 
-@media only screen and (min-width : 280px) and (max-device-width : 790px){
+@media only screen and (min-width : 280px) and (max-device-width : 590px){
   .box-container{
-    position:absolute; 
     text-align: center;
     height:38em;
     width: 15em; 
@@ -113,9 +127,10 @@ width:49.7%;
     margin-top: 5em;
     width: 30em;
   }
-  .new-title{
+  .bi-plus-circle{
     font-size: 20px;
-    margin:  0em 4em; 
+    width:10em;
+    margin:  0em 9em; 
 
   }
 .button-container{
@@ -134,20 +149,49 @@ width:49.7%;
 
 /*smartphone landscape*/
 
+   @media only screen 
+     and (min-device-width: 600px) 
+     and (max-device-width: 680px) {
+      .box-container{
+        height:21em;
+        width: 30em; 
+      }
+      .panel-1, .panel-2{
+        font-size: 8px;
+        margin-top: 5em;
+        width: 29em;
+      }
+      .dice{
+        width:  4em; 
+        height: 4em;
+        margin: 9em -16em; 
+      }
+      .bi-plus-circle{
+        font-size: 10px;
+        margin: 1em 35em;
+      }
+
+      .button-container{
+ 
+        margin: -5em 11em; 
+        width:1em;
+        font-size: 20px;
+      }
+}
 
 
 
 
 
 /*tablette*/
-@media only screen and (min-width:800px) and (max-width: 1025px){
+@media only screen and (min-width:700px) and (max-width:1024px){
   .box-container{
     height:50em;
     width: 40em; 
     margin-left: 5em;
   }
   
-  .new-title{
+  .bi-plus-circle{
     font-size: 20px;
     margin:  1em 13em; 
 
@@ -155,7 +199,7 @@ width:49.7%;
   .dice{
     width:  7em; 
     height: 7em;
-    margin: 20em  -19em; 
+    margin: 20em  -30em; 
   }
   .panel-1, .panel-2{
     font-size: 14px;

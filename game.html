@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <Link Rel="Stylesheet" href="game.css" />
     <title>baby-game</title>
 </head>
 <body>
     <main>
+        <i class="bi-plus-circle" id="new">New game</i>
         <div id= 'box-container' class='box-container'>
-  
-            <p class = 'new-title' id='new'>new game</p>
             <div class='panel-1'>
                       <section class= "section-1">
                   <h1  class='player-1'>PLAYER 1 </h1>
-                 <div class = 'score--label'  id= 'score--0'>56</div>
+                 <div class = 'score--label'  id= 'score--0'>0</div>
                         <div class= 'current-box'>
                          <p class="current-label">current score</p>
-                  <p class = 'current-score' id = 'sauce--0'>34</p>
+                  <p class = 'current-score' id = 'sauce--0'>0</p>
                         </div>
                               </section>
               </div>
@@ -26,20 +26,22 @@
            <div class='panel-2'>
    <section class= "section-2">
                 <h2 class='player-2'>PLAYER 2</h2>
-     <div class = 'score--label' id = 'score--1'>60</div>
+     <div class = 'score--label' id = 'score--1'>0</div>
      <div class= 'current-box'>
       <p class="current-label" >current score</p>
-   <p class = 'current-score' id="sauce--1">67</p>
+   <p class = 'current-score' id="sauce--1">0</p>
  
             </section>
  
          </div>
         
-            <Img src="pictures\face-2.jpg" Alt="Joue aux dés" class="dice" id ="babydice" />
+            <Img src="pictures\face-2.jpg" Alt="Joue aux dés" class="dice" id ="dice-0" />
         
             <div class=" button-container">
-                <p class = 'btn-roll' id = 'roll'>roll dice</p>
-                 <p class = 'btn-hold' id='hold'>hold</p>
+                <i class="bi-arrow-repeat" id='roll'></i>
+                <p class = 'btn-roll'>roll dice</p>
+                <i class=" bi-save-fill" id='hold'></i>
+                 <p class = 'btn-hold'>hold</p>
               </div>  
     </main>
     <Script Src="game.js"></Script>

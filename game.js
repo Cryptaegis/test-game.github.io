@@ -15,7 +15,7 @@ roundScore =0,
 score = [0,0], 
 play,
 random,
-stock = document.getElementById("hold");
+stock = document.getElementById('hold');
 
 
 let switchPlayer = () => {
@@ -55,7 +55,7 @@ let roll = () =>{
  let random  = Math.floor(Math.random() * 5) + 1;
   //2. display the result
 
-document.getElementById('dice-0').src = 'pictures/face-' + random + '.jpg';
+document.getElementById('dice-0').src = `pictures/face-${random}.jpg`;
 if (random !==1)
   {
 document.querySelector(`#sauce--${activePlayer}`).textContent = roundScore += random;
