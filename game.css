@@ -32,7 +32,7 @@ background-color:	#FFFFFF;
 box-shadow: 10px 5px 5px #FF0000;
 margin:1em 8em 3em 8em;
 padding: .5em;
- width: 80%;
+ width: 75%;
 height: 35em;
 
 }
@@ -41,7 +41,7 @@ height: 35em;
 .button-container{
 position:absolute; 
 text-align: center;
-margin: -3em 28em ; 
+margin: -7em 31em ; 
 width:6em;
 font-size:20px;
 
@@ -88,8 +88,7 @@ font-size:1.3em;
   margin-left: 40em;
   margin-top: -38.5em; 
 }
-.panel-1{
-  
+.panel-1, .panel-2{
 height:35em; 
 width:40%;
 }
@@ -98,7 +97,7 @@ width:40%;
 
 .dice{
   position:absolute; 
-  margin: -18em 32em;
+  margin: -26em 32em;
 }
 .dice:hover{
   animation-name: rotate;
@@ -114,7 +113,7 @@ width:40%;
 }
 /*smartphone portrait */
 
-@media only screen and (min-width : 280px) and (max-device-width : 590px){
+@media only screen and (min-width : 280px) and (max-device-width : 500px){
   .box-container{
     text-align: center;
     height:40em;
