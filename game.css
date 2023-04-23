@@ -8,6 +8,7 @@ body{
 {
 
 background-color:#BCBCBC;  
+width: 40em;
 }
 
 .player-1:after{
@@ -40,7 +41,7 @@ height: 35em;
 .button-container{
 position:absolute; 
 text-align: center;
-margin: -7em 23em ; 
+margin: -3em 28em ; 
 width:6em;
 font-size:20px;
 
@@ -49,7 +50,7 @@ font-size:20px;
 .bi-plus-circle{
 position:absolute; 
 width:10em; 
-margin:2em 25em;
+margin:2em 22em;
 font-size:25px;
 }
 
@@ -83,18 +84,21 @@ height: 1.5em;
 margin-top:0em;
 font-size:1.3em;  
 }
-
-.panel-1, .panel-2{
-display:inline-block;
+.panel-2{
+  margin-left: 40em;
+  margin-top: -38.5em; 
+}
+.panel-1{
+  
 height:35em; 
-width:49.7%;
+width:40%;
 }
 
 /** animation **/
 
 .dice{
   position:absolute; 
-  margin: 10em -47em;
+  margin: -18em 32em;
 }
 .dice:hover{
   animation-name: rotate;
@@ -113,7 +117,7 @@ width:49.7%;
 @media only screen and (min-width : 280px) and (max-device-width : 590px){
   .box-container{
     text-align: center;
-    height:38em;
+    height:40em;
     width: 15em; 
     margin-left: 5em;
   }
@@ -121,11 +125,16 @@ width:49.7%;
    
    margin-left:2em;
    }
-  .panel-1, .panel-2{
-    font-size: 7px;
+   .panel-1, .panel-2{
+    font-size:7px; 
     height : 30em;
-    margin-top: 5em;
-    width: 30em;
+    width: 25em;
+   }
+  .panel-1{
+    margin: 2em 8em;
+  }
+  .panel-2{
+      margin: -40em 24em;
   }
   .bi-plus-circle{
     font-size: 20px;
@@ -135,7 +144,7 @@ width:49.7%;
   }
 .button-container{
  
-  margin: 1em 4em; 
+  margin: -3em 9em; 
   width:5em;
   font-size: 20px;
 }
@@ -143,7 +152,12 @@ width:49.7%;
   position: absolute; 
   width:  3em; 
   height: 3em;
-  margin:0em 10em 0em -8em; 
+  margin: -6em 12em; 
+}
+.player--active
+{
+
+width: 20em;
 }
 }
 
@@ -151,74 +165,47 @@ width:49.7%;
 
    @media only screen 
      and (min-device-width: 600px) 
-     and (max-device-width: 680px) {
+     and (max-device-width: 1000px) {
       .box-container{
         height:21em;
         width: 30em; 
       }
+      
       .panel-1, .panel-2{
-        font-size: 8px;
-        margin-top: 5em;
-        width: 29em;
+        height: 30em;
+        width:10em;
+        font-size: 10px;
+      }
+      .panel-1{
+        margin-bottom: 4em;
+      }
+      .panel-2{
+        margin-left:40em;
       }
       .dice{
         width:  4em; 
         height: 4em;
-        margin: 9em -16em; 
+        margin: -12em 24em; 
       }
       .bi-plus-circle{
         font-size: 10px;
-        margin: 1em 35em;
+        margin: 1em 38em;
       }
 
       .button-container{
  
-        margin: -5em 11em; 
-        width:1em;
-        font-size: 20px;
+        margin: -6em 26em; 
+        width:5em;
+        font-size: 15px;
       }
+      .player--active
+      {
+      
+      width: 22em;
+      }
+
 }
 
 
 
-
-
-/*tablette*/
-@media only screen and (min-width:700px) and (max-width:1024px){
-  .box-container{
-    height:50em;
-    width: 40em; 
-    margin-left: 5em;
-  }
-  
-  .bi-plus-circle{
-    font-size: 20px;
-    margin:  1em 13em; 
-
-  }
-  .dice{
-    width:  7em; 
-    height: 7em;
-    margin: 20em  -30em; 
-  }
-  .panel-1, .panel-2{
-    font-size: 14px;
-    height : 50em;
-    margin: 2em 0.1em;
-    width: 20em;
-  }
-
-  .button-container{
-    position:absolute; 
-    text-align: center;
-    margin: -7em 12em; 
-    width:5em;
-    font-size: 20px;
-  }
-
-  section{
-    margin: 5em 6em;
-    width: 10em;
-  }
-}
 
