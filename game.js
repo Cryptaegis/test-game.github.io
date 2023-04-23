@@ -17,7 +17,6 @@ play,
 random,
 stock = document.getElementById('hold');
 
-
 let switchPlayer = () => {
 
 if (activePlayer === 1){ 
@@ -35,6 +34,8 @@ second.classList.add('player--active'),
 first.classList.remove('player--active')      
 }
 };
+// Au clic du bouton "New Game" - > Le jeu est initialisé et le joueur 1 commence
+
 let begin= () =>{
 score0.innerHTML="0", 
 score1.innerHTML ="0", 
@@ -47,6 +48,8 @@ switchPlayer(activePlayer= 1)
 
 
 document.querySelector('#new').addEventListener('click', begin );
+
+// Au clic du bouton "Roll Dice" - > Le joueur lance le dé et le résultat est affiché sur le dé et en mm temps le score ROUND (score) est affiché
 
 let roll = () =>{
 
@@ -70,7 +73,7 @@ console.log(random)
 document.querySelector('#roll').addEventListener('click', roll );
 
 
-//- Au clic du bouton "Hold* - > Les points ROUND (score)  du joueur sont envoyés dans le GLOBAL(current): 0.5 point(s) et en mm temps C'est au tour de l'autre joueur de lancer le de: 0.5 point(s)
+//- Au clic du bouton "Hold* - > Les points ROUND (score)  du joueur sont envoyés dans le GLOBAL(current): et en mm temps C'est au tour de l'autre joueur de lancer le de
 let hold = () =>{
 
  score[activePlayer] += roundScore;
