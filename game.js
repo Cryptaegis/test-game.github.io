@@ -1,4 +1,4 @@
-// Description: Test file for the game
+// Description: for the game
 // Variables déclaration 
 
 let score0 = document.querySelector('#score--0'), 
